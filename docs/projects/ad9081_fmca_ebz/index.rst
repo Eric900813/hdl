@@ -379,7 +379,7 @@ CPU/Memory interconnects addresses
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The addresses are dependent on the architecture of the FPGA, having an offset
-added to the base address from HDL (see more at :ref:`architecture`).
+added to the base address from HDL (see more at :ref:`architecture cpu-intercon-addr`).
 
 Depending on the values of parameters $INTF_CFG, $ADI_PHY_SEL and $TDD_SUPPORT,
 some IPs are instatiated and some are not.
