@@ -402,6 +402,25 @@ mxfe_tx_data_offload $INTF_CFG!="RX"                   0x7C44_0000     0x9C44_00
 axi_tdd_0            $TDD_SUPPORT==1                   0x7C46_0000     0x9C46_0000 0xBC46_00000
 ==================== ================================= =============== =========== ============
 
+For the Intel carriers, only a part of the CPU interrupts are specified,
+as the rest depend on the values of $TX_NUM_OF_LANES and $TRANSCEIVER_TYPE
+(see :git-hdl:`projects/ad9081_fmca_ebz/common/ad9081_fmca_ebz_qsys.tcl`
+for more details).
+
+===============================  ===========
+Instance                         Intel
+===============================  ===========
+mxfe_rx_jesd204.link_reconfig    0x000C_0000
+mxfe_rx_jesd204.link_management  0x000C_4000
+mxfe_tx_jesd204.link_reconfig    0x000C_8000
+mxfe_tx_jesd204.link_management  0x000C_C000
+mxfe_rx_tpl.s_axi                0x000D_2000
+mxfe_tx_tpl.s_axi                0x000D_4000
+mxfe_rx_dma.s_axi                0x000D_8000
+mxfe_tx_dma.s_axi                0x000D_C000
+mxfe_gpio.s1                     0x000E_0000
+===============================  ===========
+
 SPI connections
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 

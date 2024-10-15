@@ -28,7 +28,7 @@ negative high voltage power supplies for the output amplifiers. A VLOGIC supply
 pin is provided to set the logic levels for the digital interface pins.
 The :adi:`AD5766`/ :adi:`AD5767` utilize a versatile 4-wire serial interface
 that operates at clock rates of up to 50 MHz for write mode and up to 10MHz for
-readback and daisy-chain mode, and is compatible with SPIR, QSPI., MICROWIRE. 
+readback and daisy-chain mode, and is compatible with SPIR, QSPI., MICROWIRE.
 and DSP interface standards.
 
 The :adi:`AD5766`/ :adi:`AD5767` are available in a 4mm x 4mm WLCSP package
@@ -97,7 +97,7 @@ The addresses are dependent on the architecture of the FPGA, having an offset
 added to the base address from HDL (see more at :ref:`architecture cpu-intercon-addr`).
 
 ========================  ===========
-Instance                  Address
+Instance                  Zynq
 ========================  ===========
 spi/axi                   0x44A0_0000
 spi/axi_ad5766            0x44A1_0000
@@ -235,7 +235,7 @@ HDL related
      - :ref:`here <axi_dmac>`
    * - AXI_HDMI_TX
      - :git-hdl:`library/axi_hdmi_tx <library/axi_hdmi_tx>`
-     - :ref:`here <axi_hdmi_tx>`      
+     - :ref:`here <axi_hdmi_tx>`
    * - AXI_I2S_ADI
      - :git-hdl:`library/axi_i2s_adi <library/axi_i2s_adi>`
      - ---
@@ -259,7 +259,7 @@ HDL related
      - :ref:`here <axi_sysid>`
    * - UTIL_I2C-MIXER
      - :git-hdl:`library/util_i2c_mixer <library/util_i2c_mixer>`
-     - ---  
+     - ---
 
 -  :ref:`SPI Engine Framework documentation <spi_engine>`
 

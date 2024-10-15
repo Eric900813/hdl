@@ -6,22 +6,22 @@ AD4170_ASDZ HDL project
 Overview
 --------------------------------------------------------------------------------
 
-The HDL reference design for the :adi:`AD4170-4` and :adi:`AD4170-8` provides a 
-high resolution, 24-Bit, DC to 50 kHz Input Bandwidth, Multichannel, Low Noise 
+The HDL reference design for the :adi:`AD4170-4` and :adi:`AD4170-8` provides a
+high resolution, 24-Bit, DC to 50 kHz Input Bandwidth, Multichannel, Low Noise
 Precision Sigma-Delta ADC with PGA.
 
 The data acquisition board incorporates the AD4170-4 or AD4170-8, a DC to 50 kHz
-input bandwidth, low noise, high speed, completely integrated analog front end 
-for high precision measurement applications. 
+input bandwidth, low noise, high speed, completely integrated analog front end
+for high precision measurement applications.
 
-The AD4170-4/8 offers output data rates from 7.6 SPS up to 500 kSPS. 
+The AD4170-4/8 offers output data rates from 7.6 SPS up to 500 kSPS.
 The device contains a low noise, 24-bit Σ-Δ analog-to-digital converter (ADC),
-and can be configured to have 4 differential inputs or 8 single-ended or 
+and can be configured to have 4 differential inputs or 8 single-ended or
 pseudodifferential inputs. The on-chip low noise gain stage ensures that signals
 of small amplitude can be interfaced directly to the AD4170-4/8.
 
 This project has a :ref:`spi_engine` instance to control and acquire data from
-the AD4170-4/8 24-bit precision ADC. This instance provides support for 
+the AD4170-4/8 24-bit precision ADC. This instance provides support for
 capturing continuous samples at the maximum sample rate.
 
 Supported boards
@@ -61,16 +61,16 @@ CPU/Memory interconnects addresses
 The addresses are dependent on the architecture of the FPGA, having an offset
 added to the base address from HDL (see more at :ref:`architecture cpu-intercon-addr`).
 
-========================  ===========
-Instance                  Address
-========================  ===========
+========================  =================
+Instance                  Zynq*/DE10-Nano**
+========================  =================
 spi_ad4170_axi_regmap*    0x44A0_0000
 axi_ad4170_dma*           0x44A3_0000
 axi_ad4170_iic*           0x44A4_0000
 spi_clkgen*               0x44A7_0000
 axi_dmac_0**              0x0002_0000
 axi_spi_engine_0**        0x0003_0000
-========================  ===========
+========================  =================
 
 .. admonition:: Legend
    :class: note

@@ -9,7 +9,7 @@ Overview
 The :adi:`AD4630-24` is a two-channel, simultaneous sampling, Easy Drive, 2 MSPS
 successive approximation register (SAR) analog-to-digital converter (ADC). The
 :adi:`AD4030-24` is the single channel version. With a guaranteed maximum ±0.9
-ppm INL and no missing codes at 24-bits, the :adi:`AD4630-24` and 
+ppm INL and no missing codes at 24-bits, the :adi:`AD4630-24` and
 :adi:`AD4030-24` achieve unparalleled precision from −40°C to +125°C.
 The :adi:`AD4030-16` is a 16-bit dual channel version.
 
@@ -37,10 +37,10 @@ integrates all critical power supply and reference bypass capacitors, reducing
 the footprint and system component count, and lessening sensitivity to board
 layout.
 
-The ADAQ4224 is a μModule® precision data acquisition (DAQ) signal chain 
-solution that reduces the development cycle of a precision measurement system 
-by transferring the signal chain design challenge of component selection, 
-optimization, and layout from the designer to the device. With a guaranteed 
+The ADAQ4224 is a μModule® precision data acquisition (DAQ) signal chain
+solution that reduces the development cycle of a precision measurement system
+by transferring the signal chain design challenge of component selection,
+optimization, and layout from the designer to the device. With a guaranteed
 maximum ±TBD ppm INL and no missing codes at 24 bits, the ADAQ4224 achieves
 unparalleled precision from −40°C to +85°C.
 
@@ -62,7 +62,7 @@ Applications:
 * Seismology
 * Semiconductor manufacturing
 * Scientific instrumentation
-  
+
 Supported boards
 -------------------------------------------------------------------------------
 
@@ -191,7 +191,7 @@ The addresses are dependent on the architecture of the FPGA, having an offset
 added to the base address from HDL(see more at :ref:`architecture cpu-intercon-addr`).
 
 ========================  ===========
-Instance                  Address
+Instance                  Zynq
 ========================  ===========
 spi_ad463x_axi_regmap     0x44A0_0000
 axi_ad463x_dma            0x44A3_0000
@@ -203,7 +203,7 @@ sync_generator*           0x44C0_0000
 .. admonition:: Legend
    :class: note
 
-   -   ``*`` instantiated, but only used for ADAQ4224 with isolated power supply 
+   ``*`` instantiated, but only used for ADAQ4224 with isolated power supply
 
 I2C connections
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -222,14 +222,14 @@ I2C connections
      - axi_iic_fmc
      - 0x4162_0000
      - ---
-   * - 
-     - 
-     - 
+   * -
+     -
+     -
      - 0x50
      - eeprom
-   * - 
-     - 
-     - 
+   * -
+     -
+     -
      - 0x5F
      - temperature sensor  *
 
