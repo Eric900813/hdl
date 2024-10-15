@@ -6,11 +6,11 @@ EVAL-AD3552R HDL project
 Overview
 -------------------------------------------------------------------------------
 
-The :adi:`EVAL-AD3552R <EVAL-AD3552R>` is an evaluation board for the 
-:adi:`AD3552R <AD3552R>`, a dual-channel, 16-bit fast precision 
-digital-to-analog converter (DAC). Each channel of the :adi:`AD3552R <AD3552R>` 
-is equipped with a different transimpedance amplifier: Channel 0 has a fast 
-amplifier that achieves the optimal dynamic performance and Channel 1 has a 
+The :adi:`EVAL-AD3552R <EVAL-AD3552R>` is an evaluation board for the
+:adi:`AD3552R <AD3552R>`, a dual-channel, 16-bit fast precision
+digital-to-analog converter (DAC). Each channel of the :adi:`AD3552R <AD3552R>`
+is equipped with a different transimpedance amplifier: Channel 0 has a fast
+amplifier that achieves the optimal dynamic performance and Channel 1 has a
 precision amplifier that guarantees the optimal DC precision over temperature.
 
 The board allows testing all the output ranges of the DAC, waveform generation,
@@ -61,14 +61,14 @@ CPU/Memory interconnects addresses
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The addresses are dependent on the architecture of the FPGA, having an offset
-added to the base address from HDL (see more at :ref:`architecture`).
+added to the base address from HDL (see more at :ref:`architecture cpu-intercon-addr`).
 
 ====================  ===============
 Instance              Zynq/Microblaze
 ====================  ===============
 axi_ad3552r_dac       0x44A7_0000
-axi_dac_dma           0x44A3_0000 
-axi_clkgen            0x44B0_0000    
+axi_dac_dma           0x44A3_0000
+axi_clkgen            0x44B0_0000
 ====================  ===============
 
 GPIOs
@@ -131,8 +131,8 @@ Below are the Programmable Logic interrupts used in this project.
 
 ================ === ========== ===========
 Instance name    HDL Linux Zynq Actual Zynq
-================ === ========== ===========      
-axi_dac_dma      13  57         89 
+================ === ========== ===========
+axi_dac_dma      13  57         89
 ================ === ========== ===========
 
 Building the HDL project

@@ -28,7 +28,7 @@ digital signal conditioning blocks to allow users to configure an individual
 setup for  each analog input channel in use.
 
 The :adi:`AD7172-2` /:adi:`AD7172-4` /:adi:`AD7173-8` features a maximum output
-data rate of 31.25 kSPS, :adi:`AD7175-2`/ :adi:`AD7175-8` /:adi:`AD7176-2` 
+data rate of 31.25 kSPS, :adi:`AD7175-2`/ :adi:`AD7175-8` /:adi:`AD7176-2`
 features a maximum output data rate of 250 kSPS and :adi:`AD7177-2` features a
 maximum output data rate of 10 kSPS.
 
@@ -92,10 +92,10 @@ CPU/Memory interconnects addresses
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
 The addresses are dependent on the architecture of the FPGA, having an offset
-added to the base address from HDL (see more at :ref:`architecture`).
+added to the base address from HDL (see more at :ref:`architecture cpu-intercon-addr`).
 
 ========================  ===========
-Instance                  Address
+Instance                  DE10-Nano
 ========================  ===========
 axi_dmac_0                0x0002_0000
 axi_spi_engine_0          0x0003_0000
@@ -240,7 +240,7 @@ HDL related
      - :ref:`here <axi_hdmi_tx>`
    * - AXI_PWM_GEN
      - :git-hdl:`library/axi_pwm_gen`
-     - :dokuwiki:`[Wiki] <resources/fpga/docs/axi_pwm_gen>`  
+     - :dokuwiki:`[Wiki] <resources/fpga/docs/axi_pwm_gen>`
    * - AXI_SYSID
      - :git-hdl:`library/axi_sysid <library/axi_sysid>`
      - :ref:`here <axi_sysid>`

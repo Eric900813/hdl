@@ -1,6 +1,6 @@
 .. _ad4110:
 
-AD4110-SDZ HDL project
+AD4110 HDL project
 ================================================================================
 
 Overview
@@ -65,8 +65,7 @@ The data path and clock domains are depicted in the below diagram:
 .. image:: ad4110_block_diagram.svg
    :width: 800
    :align: center
-   :alt: AD4110_SDZ block diagram
-
+   :alt: AD4110 block diagram
 
 Jumper setup
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -164,7 +163,7 @@ Hardware related
 HDL related
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
--  :git-hdl:`AD4110-SDZ HDL project source code <projects/ad4110>`
+-  :git-hdl:`AD4110 HDL project source code <projects/ad4110>`
 
 .. list-table::
    :widths: 30 35 35
@@ -201,7 +200,7 @@ HDL related
 Software related
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
 
--  :git-no-os:`AD4110-SDZ No-OS project source code <projects/ad4110>`
+-  :git-no-os:`AD4110 No-OS project source code <projects/ad4110>`
 -  :git-no-os:`AD4110 No-OS Driver source code <drivers/afe/ad4110>`
 -  :dokuwiki:`AD4110 No-OS Driver documentation <resources/tools-software/uc-drivers/ad4110>`
 -  :dokuwiki:`AD4110 IIO Application <resources/tools-software/product-support-software/ad4110_mbed_iio_application>`
