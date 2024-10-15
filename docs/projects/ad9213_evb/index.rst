@@ -6,7 +6,7 @@ AD9213-EVB HDL project
 Overview
 -------------------------------------------------------------------------------
 
-The :adi:`AD9213-EVB <EVAL-AD9213>` reference design is a processor based 
+The :adi:`AD9213-EVB <EVAL-AD9213>` reference design is a processor based
 (e.g. Microblaze) embedded system.
 
 The design implements a high-speed receive chain using JESD204B.
@@ -55,7 +55,7 @@ The data path and clock domains are depicted in the below diagrams:
 
 The Rx links (ADC Path) operate with the following parameters:
 
--  Rx parameters: L=16, M=1, F=2, S=16, NP=16, N=16 
+-  Rx parameters: L=16, M=1, F=2, S=16, NP=16, N=16
 -  Sample Rate: 10 GSPS
 -  Dual link: No
 -  RX_DEVICE_CLK: 312.25 MHz (Lane Rate/40)
@@ -90,10 +90,10 @@ Check-out the table below to find out the conditions.
 ====================  ===============
 Instance              Zynq/Microblaze
 ====================  ===============
-axi_ad9213_xcvr       0x44A6_0000    
-rx_ad9213_tpl_core    0x44A1_0000    
-axi_ad9213_jesd       0x44A9_0000    
-axi_ad9213_dma        0x7C42_0000    
+axi_ad9213_xcvr       0x44A6_0000
+rx_ad9213_tpl_core    0x44A1_0000
+axi_ad9213_jesd       0x44A9_0000
+axi_ad9213_dma        0x7C42_0000
 ====================  ===============
 
 SPI connections
@@ -152,8 +152,8 @@ Below are the Programmable Logic interrupts used in this project.
 Instance name    IRQ number
 ================ ===========
 hmc7044_spi      5
-axi_ad9213_dma   12 
-axi_ad9213_jesd  13 
+axi_ad9213_dma   12
+axi_ad9213_jesd  13
 ================ ===========
 
 Building the HDL project
@@ -168,7 +168,15 @@ If you want to build the sources, ADI makes them available on the
 the HDL repository.
 
 Then go to the :git-hdl:`projects/ad9213_evb <projects/ad9213_evb>`
-location and run the "make" command by typing in your command prompt.
+location and run the make command by typing in your command prompt:
+
+**Linux/Cygwin/WSL**
+
+.. code-block::
+   :linenos:
+
+   user@analog:~$ cd hdl/projects/ad9213_evb/vcu118
+   user@analog:~/hdl/projects/ad9081_fmca_ebz/zcu102$ make
 
 A more comprehensive build guide can be found in the :ref:`build_hdl` user guide.
 

@@ -49,13 +49,13 @@ Supported carriers
      - :xilinx:`ZedBoard <products/boards-and-kits/1-8dyf-11.html>`
      - PMOD-JA, PMOD-JB, PMOD-JC
    * - EVAL-AD7770-ARDZ
-     - :intel:`De10-Nano <content/www/us/en/developer/topic-technology/edge-5g/hardware/fpga-de10-nano.html>`
+     - :intel:`DE10-Nano <content/www/us/en/developer/topic-technology/edge-5g/hardware/fpga-de10-nano.html>`
      - Arduino shield connector
    * - EVAL-AD7771-ARDZ
-     - :intel:`De10-Nano <content/www/us/en/developer/topic-technology/edge-5g/hardware/fpga-de10-nano.html>`
+     - :intel:`DE10-Nano <content/www/us/en/developer/topic-technology/edge-5g/hardware/fpga-de10-nano.html>`
      - Arduino shield connector
    * - EVAL-AD7779-ARDZ
-     - :intel:`De10-Nano <content/www/us/en/developer/topic-technology/edge-5g/hardware/fpga-de10-nano.html>`
+     - :intel:`DE10-Nano <content/www/us/en/developer/topic-technology/edge-5g/hardware/fpga-de10-nano.html>`
      - Arduino shield connector
 
 Block design
@@ -113,7 +113,7 @@ SPI connections
    :class: note
 
    -  ``*``  only for ZedBoard
-   -  ``**`` only for De10-Nano
+   -  ``**`` only for DE10-Nano
 
 GPIOs
 ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
@@ -187,7 +187,7 @@ ad777x_dma**     5   -          -           45              77
    :class: note
 
    -  ``*``  only for ZedBoard
-   -  ``**`` only for De10-Nano
+   -  ``**`` only for DE10-Nano
 
 Building the HDL project
 -------------------------------------------------------------------------------
@@ -202,7 +202,7 @@ the HDL repository.
 
 **Linux/Cygwin/WSL**
 
-Make for ZedBoard project:
+Building the ZedBoard project:
 
 .. code-block::
    :linenos:
@@ -210,7 +210,7 @@ Make for ZedBoard project:
    user@analog:~$ cd hdl/projects/ad777x_ardz/zed
    user@analog:~/hdl/projects/ad777x_ardz/zed$ make
 
-Make for De10Nano project:
+Building the DE10-Nano project:
 
 .. code-block::
    :linenos:
