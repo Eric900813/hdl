@@ -151,16 +151,18 @@ module system_top (
   // instantiations
 
   // unused
-  assign gpio_i[63:34] = gpio_o[63:34];
+  assign gpio_i[63:35] = gpio_o[63:35];
 
   // GPIO outputs
-   assign ltc2308_cs = gpio_o[33];
-   assign ad719x_sync_n = gpio_o[32];
+
+  assign ltc2308_cs = gpio_o[33];
+  assign ad719x_sync_n = gpio_o[32];
 
   assign gpio_bd_o[7:0] = gpio_o[7:0];
 
   // GPIO inputs
 
+  assign gpio_i[34] = ad719x_spi_miso;
   assign gpio_i[31:14] = gpio_o[31:14];
   assign gpio_i[13:8] = gpio_bd_i[5:0];
 
